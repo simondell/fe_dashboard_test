@@ -1,6 +1,6 @@
 Name: Simon Dell
 
-Tools used: iterm, zsh, safari, chrome, node, npm, webpack, emmet
+Tools used: iterm, zsh, safari, chrome, node, npm, webpack, emmet, webpack-dev-server, babel,
 
 Editor used: SublimeText3
 
