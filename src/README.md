@@ -1,8 +1,8 @@
-Name:
+Name: Simon Dell
 
-Tools used:
+Tools used: iterm, zsh, safari, chrome, node, npm, webpack, emmet
 
-Editor used:
+Editor used: SublimeText3
 
 Time taken:
 

@@ -4,7 +4,7 @@
   "description": "FE Dashboard solution",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "webpack --config webpack.config.js"
   },
   "keywords": [
     "d3",
@@ -13,5 +13,8 @@
     "charts"
   ],
   "author": "Simon Dell",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }
