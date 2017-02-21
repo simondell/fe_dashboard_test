@@ -1,9 +1,9 @@
 import React from 'react';
 
-const App = () => (
-  <main>
+const SalesSummary = () => (
+  <section>
     <header><h1>Sales vs Target for Week 3</h1></header>
-  </main>
+  </section>
 );
 
-export default App;
+export default SalesSummary;
