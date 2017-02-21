@@ -1,4 +1,4 @@
-import Sales from './components/SalesSummary';
+import Sales from './components/Stats';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
