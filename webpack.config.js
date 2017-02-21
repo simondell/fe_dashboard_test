@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require("webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: './src/app.js',
@@ -13,5 +14,9 @@ module.exports = {
 			exclude: /node_modules/,
 			loader: "babel-loader"
 		}]
-	}
+	},
+  plugins: [new HtmlWebpackPlugin({
+  	title: 'Dashboard Technical Test'
+
+  })]
 };
