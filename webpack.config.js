@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require("webpack");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	devtool: "cheap-eval-source-map",
@@ -14,17 +14,19 @@ module.exports = {
 
 	module: {
 		rules: [{
-			test: /\.js$/,
+			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			loader: "babel-loader"
 		}]
 	},
 
-	plugins: [new HtmlWebpackPlugin({
-		title: 'Dashboard Technical Test'
-	})]
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: 'Dashboard Technical Test'
+		})
+	],
 
 	resolve: {
-		extensions: ['', '.js', '.jsx']
+		extensions: ['.js', '.jsx', '.json']
 	}
 };
