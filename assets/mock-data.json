@@ -1,0 +1,19 @@
+{
+  "line-graph": [
+    {"date": "2016-3-24", "value": "93.24"},
+    {"date": "2016-3-25", "value": "95.35"},
+    {"date": "2016-3-26", "value": "98.84"},
+    {"date": "2016-3-27", "value": "99.92"},
+    {"date": "2016-3-30", "value": "99.80"},
+    {"date": "2016-4-1", "value": "99.47"}
+  ],
+  "sales": {
+    "current": 613860,
+    "target": 800000
+  },
+  "vehicles-made": 325,
+  "retail-orders": 1320,
+  "online-orders": 14,
+  "configurations-completed": 82900,
+  "test-drives": 658
+}

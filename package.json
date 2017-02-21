@@ -1,0 +1,17 @@
+{
+  "name": "akqa-fe-dev-exercise-dashboard",
+  "version": "0.0.1",
+  "description": "FE Dashboard solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "d3",
+    "react",
+    "dashboard",
+    "charts"
+  ],
+  "author": "Simon Dell",
+  "license": "ISC"
+}
