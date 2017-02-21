@@ -4,7 +4,7 @@
   "description": "FE Dashboard solution",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [
     "d3",
@@ -15,6 +15,9 @@
   "author": "Simon Dell",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
     "webpack": "^2.2.1"
   }
 }
