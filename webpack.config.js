@@ -19,7 +19,12 @@ module.exports = {
 			loader: "babel-loader"
 		}]
 	},
+
 	plugins: [new HtmlWebpackPlugin({
 		title: 'Dashboard Technical Test'
 	})]
+
+	resolve: {
+		extensions: ['', '.js', '.jsx']
+	}
 };
