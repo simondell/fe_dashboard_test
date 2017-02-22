@@ -1,4 +1,5 @@
 import React from 'react';
+import Graph from './Graph';
 import ProgressBar from './ProgressBar';
 
 export default class SalesSummary extends React.Component {
@@ -6,7 +7,7 @@ export default class SalesSummary extends React.Component {
 		return (
 			<section>
 				<h1>Sales vs Target for Week 3</h1>
-				<p>The line graph here</p>
+				<Graph data={ this.props.data.graph } />
 				<ProgressBar
 					now={ this.props.data.sales.current }
 					now-label="Sales"
