@@ -1,6 +1,7 @@
 import Metric from './Metric';
 import React from 'react';
 import SalesSummary from './SalesSummary';
+import styles from '../app.css';
 
 export default class Stats extends React.Component {
 	getMetrics () {
@@ -11,7 +12,7 @@ export default class Stats extends React.Component {
 
 	render () {
 		return (
-			<section>
+			<section className="dashboard">
 				<SalesSummary data={ this.props.data } />
 				{ this.getMetrics() }
 			</section>
