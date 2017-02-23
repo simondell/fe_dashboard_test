@@ -24,7 +24,7 @@ function metricData ( key ) {
 // I know everyone prefers `const foo = () => {}`` these days. Call me old fashioned.
 
 const store = {
-	measures: Object.keys( data ).filter( pickMetrics ).map( metricData ),
+	metrics: Object.keys( data ).filter( pickMetrics ).map( metricData ),
 	sales: data.sales,
 	graph: data['line-graph']
 };
