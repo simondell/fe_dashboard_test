@@ -1,6 +1,19 @@
 .stats {
 	border: 0;
+	width: 100%;
+	margin-top: 30px;
 }
 
-.stats thead {
+.stats td {
+	font-size: 3.2rem;
+}
+
+.stats th {
+	width: 20%;
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: left;
+	text-transform: uppercase;
+	vertical-align: top;
+	color: #646464;
 }
