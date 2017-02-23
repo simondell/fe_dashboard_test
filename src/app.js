@@ -31,13 +31,7 @@ const store = {
 
 // Webpack's HTML helper (which creates the index.html) does have template support, but
 //  I feel this is cleaner (and avoids using two templating systems for one project)
-document.querySelector('body')
-	.insertBefore(
-		document.createElement('main'),
-		document.querySelector('body script')
-	);
-
 ReactDOM.render(
 	<Sales data={ store } />,
-	document.querySelector('main') // React complains about this, but its main objection doesn't apply when we control all the nodes
+	document.querySelector('body')
 );

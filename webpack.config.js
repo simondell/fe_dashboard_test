@@ -2,6 +2,19 @@ const path = require('path');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+module.exports = {
+  module: {
+	rules: [
+	]
+  },
+  plugins: [
+	new ExtractTextPlugin("styles.css"),
+  ]
+}
+
+
 module.exports = {
 	devtool: "cheap-eval-source-map",
 
@@ -17,11 +30,15 @@ module.exports = {
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			loader: "babel-loader"
-		},
-		{
-			test: /\.css/,
-			loaders: ['style-loader', 'css-loader'],
-			include: __dirname + '/src'
+		},{
+			test: /\.css$/,
+			use: [
+				'style-loader',
+				{
+					loader: 'css-loader',
+					options: { modules: true }
+				}
+			]
 		}]
 	},
 

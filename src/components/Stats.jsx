@@ -12,10 +12,10 @@ export default class Stats extends React.Component {
 
 	render () {
 		return (
-			<section className="dashboard">
+			<main className={ styles.dashboard }>
 				<SalesSummary data={ this.props.data } />
 				{ this.getMetrics() }
-			</section>
+			</main>
 		);
 	}
 }
