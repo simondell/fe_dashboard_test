@@ -1,5 +1,5 @@
 import React from 'react';
-import Number from './Number';
+import Number from '../number/number';
 
 export default class Metric extends React.Component {
 	render () {

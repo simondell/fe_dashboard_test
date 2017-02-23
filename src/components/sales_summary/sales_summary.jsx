@@ -1,6 +1,6 @@
 import React from 'react';
-import Graph from './Graph';
-import ProgressBar from './ProgressBar';
+import Graph from '../graph/graph';
+import ProgressBar from '../progress_bar/progress_bar';
 
 export default class SalesSummary extends React.Component {
 	render () {

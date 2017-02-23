@@ -1,7 +1,8 @@
 import data from '../assets/mock-data.json';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sales from './components/Stats';
+import Dashboard from './components/dashboard/dashboard';
+import styles from './app.css';
 
 console.log(`
 ############################
@@ -32,6 +33,6 @@ const store = {
 // Webpack's HTML helper (which creates the index.html) does have template support, but
 //  I feel this is cleaner (and avoids using two templating systems for one project)
 ReactDOM.render(
-	<Sales data={ store } />,
+	<Dashboard data={ store } />,
 	document.querySelector('body')
 );
