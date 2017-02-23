@@ -1,3 +1,5 @@
+@import "../../shared/variables.css";
+
 .stats {
 	border: 0;
 	width: 100%;
@@ -26,5 +28,5 @@
 	text-align: left;
 	text-transform: uppercase;
 	vertical-align: top;
-	color: #646464;
+	color: var(--color-grey);
 }

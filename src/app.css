@@ -1,11 +1,14 @@
+@import "shared/variables.css";
+
 html {
 	font-size: 62.5%; /* 10px */
 	font-family: HelveticaNeue-Light, sans;
 }
 
 body {
-	background-color: #ECECEC;
 	line-height: 1.2; /*20px*/
 	font-size: 1.6rem; /*16px*/
 	font-weight: 300;
+	background-color: var(--color-grey-light);
+	color: var(--color-black);
 }
