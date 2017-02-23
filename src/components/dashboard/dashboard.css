@@ -1,4 +1,8 @@
 .dashboard {
+	display: flex;
+	flex-flow: column wrap;
+	width: 770px;
+	padding: 25px 14px 26px 16px;
 	background-color: white;
 	color: black;
 }
