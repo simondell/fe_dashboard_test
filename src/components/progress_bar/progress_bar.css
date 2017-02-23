@@ -1,0 +1,52 @@
+.progressbar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	width: 100%;
+	height: 33px;
+	background-color: #ECECEC;
+}
+
+.progressbar div {
+	height: 33px;
+}
+
+.now,
+.max {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.now {
+	background-color: #137DCA;
+}
+
+.now-label,
+.max-label,
+.now-value,
+.max-value {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.now-label,
+.max-label {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.now-label {
+	color: white;
+}
+
+.now-value {
+	color: #EEF6FC;
+}
+
+.max-label,
+.max-value {
+	color: #137DCA;
+}
