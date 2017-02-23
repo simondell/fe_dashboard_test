@@ -1,19 +1,14 @@
 @import "../../shared/variables.css";
 
 .stats {
-	border: 0;
-	width: 100%;
-	margin-top: 25px;
-}
-
-.stats tbody {
-	margin-bottom: 20px;
+	border-collapse: collapse;
+	width: auto;
+	margin: 25px 0 0;
 }
 
 .stats td,
 .stats th {
-	box-sizing: border-box;
-	padding: 0 20px 0 0;
+	padding: 0;
 }
 
 .stats td {
@@ -22,7 +17,7 @@
 
 .stats th {
 	width: 20%;
-	padding-top: 12px;
+	padding-top: 10px;
 	font-size: 1.1rem;
 	font-weight: 300;
 	text-align: left;
