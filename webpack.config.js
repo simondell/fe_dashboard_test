@@ -19,12 +19,17 @@ module.exports = {
 			loader: "babel-loader"
 		},{
 			test: /\.css$/,
-			use: [
-				'style-loader',
-				{
-					loader: 'css-loader',
-					options: { modules: true }
+			use: [{
+				loader: 'style-loader'
+			},{
+				loader: 'css-loader',
+				options: {
+					modules: true,
+					importLoaders: 1
 				}
+			},{
+				loader: 'postcss-loader'
+			}
 			]
 		}]
 	},

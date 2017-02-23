@@ -10,8 +10,10 @@ function th ( strings, id ) {
 export default class Stats extends React.Component {
 	getHeadings () {
 		return this.props.metrics.map( (m, i) => {
+			let title = m.title.replace(/\-/g,' ');
+
 			return (
-				<th key={ `th${i}` } id={ th`${i}` }>{ m.title.replace('-',' ') }</th>
+				<th key={ `th${i}` } id={ th`${i}` }>{ title }</th>
 			);
 		});
 	}

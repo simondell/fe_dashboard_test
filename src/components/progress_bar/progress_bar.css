@@ -1,0 +1,54 @@
+@import "../../shared/variables.css";
+
+.progressbar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	width: 100%;
+	height: 33px;
+}
+
+.progressbar div {
+	height: 33px;
+}
+
+.now,
+.max {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.now {
+	background-color: var(--color-blue);
+}
+
+.max {
+	background-color: var(--color-grey-light);
+}
+
+.now-label,
+.max-label,
+.now-value,
+.max-value {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.now-label,
+.max-label {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.now-label,
+.now-value {
+	color: var(--color-blue-light);
+}
+
+.max-label,
+.max-value {
+	color: var(--color-blue);
+}
