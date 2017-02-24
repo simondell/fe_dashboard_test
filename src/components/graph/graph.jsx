@@ -14,21 +14,15 @@ export default class Graph extends React.Component {
 	}
 
 	componentDidMount () {
-		const faux = Faux.Element('div.renderedD3', 'chart')
+	}
+
+	render () {
+		const faux = Faux.createElement('div');
 
 		d3.select(faux)
 			.append('div')
 			.html('Hello World!')
-	}
 
-	render () {
-		return (
-			<div>
-				<h2>Here is some fancy data:</h2>
-				<div className='renderedD3'>
-					{this.state.chart}
-				</div>
-			</div>
-		);
+		return faux.toReact();
 	}
 }
