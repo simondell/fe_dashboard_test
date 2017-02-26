@@ -10,6 +10,7 @@ weds: 1.5
 thurs: 5
 fri: 4
 sat: 1
+sun: 2.5
 
 Additional comments (optional):
 

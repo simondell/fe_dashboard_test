@@ -14,6 +14,8 @@ export default class Graph extends React.Component {
 			};
 		});
 
+		// const { data } = props;
+
 		const margins = { top: 0, right: 0, bottom: 10, left: 0 };
 
 		// 740 is magic number.. should be calculated from width of container or similar
@@ -24,16 +26,16 @@ export default class Graph extends React.Component {
 		const height = 75 - margins.top - margins.bottom;
 
 		const x = d3.scaleTime()
-			.domain( data.map( datum => data.date ) )
-			.range( 0, width );
+			.domain( [d3.min( data, datum => datum.date ), d3.max( data, datum => datum.date )] )
+			.rangeRound( [0, width] );
 
 		const y = d3.scaleLinear()
 			.domain( [d3.min( data, datum => datum.value ), d3.max( data, datum => datum.value )] )
 			.range( [height, 0] );
 
 		const lineGenerator = d3.line()
-			.x( datum => { console.log(`x: ${datum.date}`); return x( datum.date ); } )
-			.y( datum => { console.log(`y: ${datum.value}`); return y( datum.value ); } );
+			.x( datum => { console.log(`x: ${datum.date}, ${x(datum.date)}`); return x( datum.date ); } )
+			.y( datum => { console.log(`y: ${datum.value}, ${y(datum.value)}`); return y( datum.value ); } );
 
 		this.state = { data, lineGenerator };
 	}
@@ -42,7 +44,7 @@ export default class Graph extends React.Component {
 		return (
 			<svg>
 				<path fill="none"
-					stroke="none"
+					stroke="steelblue"
 					strokeWidth="1.5"
 					d={ this.state.lineGenerator( this.state.data ) } />
 			</svg>
