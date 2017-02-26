@@ -9,7 +9,6 @@ export default class ProgressBar extends React.Component {
 		let { now, max } = props;
 		let split = Math.floor( now / max * 100 );
 		this.state = { split };
-		console.log( this.state );
 	}
 
 	getMaxWidth () {
