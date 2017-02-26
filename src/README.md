@@ -21,6 +21,6 @@ Time taken includes researching a lot of tech:
 - basics of d3. I'd started on a tutorial series before working on this project, but had to finish that before being able to do anything in this project
 - tried to get Jest working for tests but hit several snags and gave up:
 	- failed to understand the interaction of webpack, jest and css-modules (i vaguely got how you need to mock up webpack's styles import and the className replacement, but didn't understand how to accomplish it)
-	- didn't know what to test - it's been 15 months since I last tested a React component and I forgot all the patterns and practices (plus the codebase I last did this in had loads of helper tools and patterns already configured before I got there)
+	- didn't know what to test - it's been 15 months since I last tested a React component and I forgot all the patterns and practices (plus the codebase I last did this in had loads of helper tools and patterns already configured which wouldn't apply and weren't accessible).
 -
 
