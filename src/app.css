@@ -1,8 +1,9 @@
+@import "shared/fonts.css";
 @import "shared/variables.css";
 
 html {
 	font-size: 62.5%; /* 10px */
-	font-family: HelveticaNeue-Light, sans;
+	font-family: VolvoSansPro, HelveticaNeue-Light, sans;
 }
 
 body {
