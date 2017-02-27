@@ -38,8 +38,12 @@ export default class Graph extends React.Component {
 						stroke="#137DCA"
 						strokeWidth="2"
 						d={ line( data ) } />
-					</g>
+				</g>
+				<g transform={ `translate(${width - 40 },${height + margins.top + margins.bottom})`}>
+					<text fill="#000" text-anchor="end">2018</text>
+				</g>
 			</svg>
 		);
 	}
 }
+
