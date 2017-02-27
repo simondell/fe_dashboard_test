@@ -2,14 +2,14 @@
 	display: flex;
 	flex-flow: column wrap;
 	width: 740px;
-	padding: 30px 14px 15px 16px;
+	padding: 24px 14px 15px 16px;
 	background-color: white;
 	color: black;
 }
 
 .dashboard h1 {
 	font-weight: 300;
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 	line-heght: 3rem;
 	padding: 0;
 	margin: 0;
